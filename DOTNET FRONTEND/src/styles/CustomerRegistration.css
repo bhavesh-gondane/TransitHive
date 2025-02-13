@@ -1,0 +1,86 @@
+/* General container for the registration form */
+.customer-registration-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.customer-registration-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.customer-registration-form .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-registration-form .form-group {
+  flex: 1;
+  margin: 0 10px 20px 10px;
+}
+
+.customer-registration-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.customer-registration-form .form-group input {
+  width: 100%; /* Full width for all inputs */
+  padding: 10px 15px; /* Padding inside the input */
+  font-size: 16px; /* Font size */
+  border: 1px solid #ddd; /* Border for input fields */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove outline on focus */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.customer-registration-form .form-group input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+}
+
+.customer-registration-form .form-group input[type="text"],
+.customer-registration-form .form-group input[type="email"],
+.customer-registration-form .form-group input[type="password"],
+.customer-registration-form .form-group input[type="number"] {
+  width: 100%; /* Ensure all input fields take the full width */
+  padding: 10px 15px; /* Same padding for all */
+  font-size: 16px; /* Font size */
+}
+
+.customer-registration-form button[type="submit"] {
+  width: 100%; /* Full width button */
+  padding: 12px; /* Padding for button */
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* White text */
+  font-size: 18px; /* Font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.customer-registration-form button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customer-registration-form .form-row {
+    flex-direction: column; /* Stack inputs on smaller screens */
+  }
+
+  .customer-registration-form .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+
+  .customer-registration-form button[type="submit"] {
+    font-size: 16px; /* Adjust font size for small screens */
+  }
+}

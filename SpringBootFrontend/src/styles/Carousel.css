@@ -1,0 +1,23 @@
+/* Make the carousel full width and increase the height */
+.carousel-container {
+  width: 100%; /* Full width */
+  margin: 0;   /* Remove margin */
+  padding: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 600px; /* Increase height here */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.carousel-caption h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  color: white;
+}

@@ -1,0 +1,76 @@
+.testimonials-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards in one row */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonial-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-feedback {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .testimonial-stars {
+    font-size: 1.2rem;
+    color: #ffba00;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for smaller screens */
+    }
+  
+    .testimonial-card {
+      padding: 15px;
+    }
+  
+    .testimonial-photo img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr; /* 1 card per row for mobile */
+    }
+  }
+  
